@@ -5,12 +5,10 @@ import { UserContext } from "./Context";
 
 //export default ({ user }) => {
 export default () => {
-  const { user, makeLogIn, setUser } = React.useContext(UserContext);
+  //  const { user, makeLogIn, setUser } = React.useContext(UserContext);
 
-  return (
+  /*return (
     <>
-      {/*<Header user={user} />
-      <h1>Hello, {user.user_name}!</h1>*/}
       <Header />
       <h1>Hello, {user.isLoggedIn ? user.userName : "anonymous!"}!</h1>
       <button onClick={makeLogIn}>Log in</button>
@@ -21,6 +19,12 @@ export default () => {
       >
         Log Out
       </button>
+    </>
+  );*/
+  return (
+    <>
+      <h1>Hello!</h1>
+      <button>Translate</button>
     </>
   );
 };

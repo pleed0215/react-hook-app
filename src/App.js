@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Screen from "./Screen";
-import UserContextProvider from "./Context";
+import UserContextProvider, { Lang } from "./Context";
+import translations from "./translation";
 
 function App() {
   /*const [user, setUser] = useState({
@@ -11,9 +12,13 @@ function App() {
 
   //return <Screen user={user} />;
   return (
+    /*
     <UserContextProvider>
       <Screen />
-    </UserContextProvider>
+    </UserContextProvider>*/
+    <Lang sourceLang="en" translations={translations}>
+      <Screen />
+    </Lang>
   );
 }
 
