@@ -1,7 +1,7 @@
 import React from "react";
 
 import Header from "./Header";
-import { UserContext } from "./Context";
+import { useSetLang, UserContext, useT } from "./Context";
 
 //export default ({ user }) => {
 export default () => {
@@ -21,10 +21,12 @@ export default () => {
       </button>
     </>
   );*/
+  const setLang = useSetLang();
+  const t = useT();
   return (
     <>
-      <h1>Hello!</h1>
-      <button>Translate</button>
+      <h1>{t("hello")}</h1>
+      <button onClick={setLang("es")}>{t("Translate")}</button>
     </>
   );
 };

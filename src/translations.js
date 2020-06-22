@@ -1,7 +1,7 @@
 const translations = {
   es: {
     hello: "hola",
-    translation: "tranducir",
+    Translate: "tranducir",
   },
 };
 
